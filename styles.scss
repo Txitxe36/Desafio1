@@ -1,0 +1,137 @@
+@mixin background($color) {
+    background-color: $color;
+    color: set-color($color);
+    button{
+        background-color: set-boton-color($color);
+    }
+  }
+// FUNCION PARA CAMBIAR DE COLOR EL TEXTO DEPENDIEDO DEL COLOR DEL FONDO
+ @function set-color($color) {
+    @if (lightness($color) >40%) 
+    {
+      @return rgb(3, 4, 19);
+    } 
+    @else 
+    {
+      @return rgb(255, 254, 254);
+    }
+  } 
+//FUNCION PARA CAMBIAR DE COLOR EL BOTON SEGUN EL COLOR DEL FONDO
+  @function set-boton-color($color) {
+    @if (lightness($color) >40%) 
+    {
+      @return rgb(255, 0, 0);
+    } 
+    @else 
+    {
+      @return rgb(46, 171, 243);
+    }
+  } 
+//TIPO DE LETRAS Y COLORES
+$font: Helvetica, sans-serif;
+$light: #e6a315;
+$primary: #fff;
+$secondary: #0e0c0c;
+
+//CONTAINER RESPONSIVE
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+//CONTAINER
+.container{
+    @include background($primary);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content: flex-start;
+    width: 500px;
+    height: 550px;
+    margin-top: 60px;
+    box-shadow: -4px 10px 25px rgb(133, 140, 160);
+    border-radius: 3px;
+}
+//TITULO Y BOTON
+.primer_parte{
+    display: flex;
+    width: 470px;
+    height: 50px;
+    margin-top: 30px;
+    justify-content:space-between;
+    font-family: $font;
+   h1{
+       font-size: 26px;
+       text-align: center;
+       margin-top: 5px;
+       margin-left: 3px;
+     }
+             button{
+                    border: red;
+                    float: right;
+                    width: 130px;
+                    height: 40px;
+                    margin-top: 5px;
+                    margin-right: 5px;  
+                    }
+}
+//FECHA Y OJO
+ .ojo{
+     float: left;
+     margin-top: 10px;
+     color: dimgray;
+     font-family: calibri;
+ }
+//TIPO DE LETRA DEL CHECKLIST
+ #check{
+     font-size: 20px;
+ }
+ //CUADRADO DEL CHECK
+ .fa-check-square{
+     margin-right: 5px;
+ }
+ //BARRA DE PROGRESO
+ #progreso{
+     width: 400px;
+ }
+ //LOS TRES CHECK
+ .form-check2{
+     margin: 7px;
+     s{
+         color: gray;
+     }
+     .fa-trash-alt{
+         float: right;
+        
+     }
+ }
+//AÑADIR ELEMENTO
+ #añadir{
+    margin-top: 10px;
+    width: 470px;
+    padding: 8px;
+    background-color: #fff;
+    border: 0.1px solid rgba(128, 128, 128, 0.479);
+    box-shadow: 1px 0.5px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+ }
+ //COMPARTIDO
+ h2{
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+//IMAGENES
+ .imagenes{
+    display: flex;
+    margin-top: 20px;
+    justify-content:center;
+   img{
+       margin-bottom: 40px;
+
+   }
+ }
+ 

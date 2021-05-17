@@ -1,0 +1,120 @@
+@charset "UTF-8";
+.container {
+  background-color: #fff;
+  color: #030413;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  width: 500px;
+  height: 550px;
+  margin-top: 60px;
+  -webkit-box-shadow: -4px 10px 25px #858ca0;
+          box-shadow: -4px 10px 25px #858ca0;
+  border-radius: 3px;
+}
+
+.container button {
+  background-color: red;
+}
+
+.primer_parte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 470px;
+  height: 50px;
+  margin-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Helvetica, sans-serif;
+}
+
+.primer_parte h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 3px;
+}
+
+.primer_parte button {
+  border: red;
+  float: right;
+  width: 130px;
+  height: 40px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.ojo {
+  float: left;
+  margin-top: 10px;
+  color: dimgray;
+  font-family: calibri;
+}
+
+#check {
+  font-size: 20px;
+}
+
+.fa-check-square {
+  margin-right: 5px;
+}
+
+#progreso {
+  width: 400px;
+}
+
+.form-check2 {
+  margin: 7px;
+}
+
+.form-check2 s {
+  color: gray;
+}
+
+.form-check2 .fa-trash-alt {
+  float: right;
+}
+
+#añadir {
+  margin-top: 10px;
+  width: 470px;
+  padding: 8px;
+  background-color: #fff;
+  border: 0.1px solid rgba(128, 128, 128, 0.479);
+  -webkit-box-shadow: 1px 0.5px rgba(0, 0, 0, 0.24);
+          box-shadow: 1px 0.5px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagenes img {
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=styles.css.map */
